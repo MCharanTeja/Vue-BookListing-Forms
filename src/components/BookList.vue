@@ -44,16 +44,6 @@ export default {
   computed: {
     filteredBooks() {
       return _.filter(this.books,["ownership",this.holding]);
-      // for(var i in this.books) {
-      //   console.log(this.books[i]);
-      //   if(this.books[i].ownership===this.holding) {
-      //     return this.books[i];
-      //   }
-      //   else {
-      //     return this.books;
-      //   }
-      // }
-     
     }
   },
   methods: {
